@@ -1,7 +1,7 @@
 {
   "name": "com.appalachia.node.html-diff",
   "displayName": "Appalachia Interactive HTML-diff",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Generate colorized HTML diffs.  Useful for tracking changes to Apache-licensed repositories.",
   "keywords": [
     "Scripts",

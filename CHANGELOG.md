@@ -11,6 +11,13 @@
 ## Unreleased
 | Hash | Date | Author | Changes |
 |------|------|--------|---------|
+| fc7d190 | 2021-04-20 | Chris Schubert | Removing private identifier from package.json for internal publish |
+
+
+ ## Tag: v1.0.1
+| Hash | Date | Author | Changes |
+|------|------|--------|---------|
+| 3625087 | 2021-04-20 | Chris Schubert | 1.0.1 |
 | ce9c01c | 2021-04-20 | Chris Schubert | Fixing issue with package version |
 | ba89abf | 2021-04-20 | Chris Schubert | Fixing incorrect scripts path |
 | 669a06e | 2021-04-20 | Chris Schubert | Update readme.md |
