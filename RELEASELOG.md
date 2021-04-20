@@ -8,9 +8,10 @@
 ```
 
 
-# v1.0.0
+# 0.2.0
 | Hash | Date | Author | Changes |
 |------|------|--------|---------|
+| ba89abf | 2021-04-20 | Chris Schubert | Fixing incorrect scripts path |
+| 669a06e | 2021-04-20 | Chris Schubert | Update readme.md |
+| 6c8389a | 2021-04-20 | Chris Schubert | Updating docs for first Appalachia Interactive publish |
 | 8d1f8af | 2021-04-20 | Chris Schubert | Setting up HTML diff repo |
-| 5fca839 | 2021-03-02 | Scott González | Update README |
-| 9887c43 | 2020-10-06 | Scott González | 1.0.0 |
