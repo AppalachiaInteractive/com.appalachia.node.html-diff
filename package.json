@@ -34,14 +34,14 @@
     }
   ],
   "scripts": {
-    "preversion": "bash ~/com.appalachia/ai/ai.sh package preversion",
-    "version": "bash ~/com.appalachia/ai/ai.sh package version",
-    "postversion": "bash ~/com.appalachia/ai/ai.sh package postversion",
-    "prepack": "bash ~/com.appalachia/ai/ai.sh package prepack",
-    "postpack": "bash ~/com.appalachia/ai/ai.sh package postpack",
-    "prepublishOnly": "bash ~/com.appalachia/ai/ai.sh package prepublishOnly",
-    "publish": "bash ~/com.appalachia/ai/ai.sh package publish",
-    "postpublish": "bash ~/com.appalachia/ai/ai.sh package postpublish",
+    "preversion": "bash ~/com.appalachia/appa/appa.sh package preversion",
+    "version": "bash ~/com.appalachia/appa/appa.sh package version",
+    "postversion": "bash ~/com.appalachia/appa/appa.sh package postversion",
+    "prepack": "bash ~/com.appalachia/appa/appa.sh package prepack",
+    "postpack": "bash ~/com.appalachia/appa/appa.sh package postpack",
+    "prepublishOnly": "bash ~/com.appalachia/appa/appa.sh package prepublishOnly",
+    "publish": "bash ~/com.appalachia/appa/appa.sh package publish",
+    "postpublish": "bash ~/com.appalachia/appa/appa.sh package postpublish",
     "test": "mocha"
   },
   "bin": {
