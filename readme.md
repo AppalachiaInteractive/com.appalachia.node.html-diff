@@ -56,7 +56,3 @@ a token.
 ```sh
 git config --global gist-diff.token "Your token"
 ```
-
-## License
-
-Copyright Scott González. Released under the terms of the MIT license.
