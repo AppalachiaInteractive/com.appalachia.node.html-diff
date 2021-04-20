@@ -1,0 +1,2 @@
+All contributions by Appalachia Interactive via html-diff project are licensed under the terms in `LICENSE.md`.  
+All other contributions are licensed by Scott Gonzalez under the terms in `LICENSE.txt`.

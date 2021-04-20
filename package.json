@@ -1,36 +1,61 @@
 {
-  "name": "pretty-diff",
-  "version": "1.0.0",
-  "description": "Generate colorized HTML diffs.",
+  "name": "com.appalachia.node.html-diff",
+  "private": true,
+  "displayName": "Appalachia Interactive HTML-diff",
+  "version": "0.1.0",
+  "description": "Generate colorized HTML diffs.  Useful for tracking changes to Apache-licensed repositories.",
   "keywords": [
+    "Scripts",
+    "Tool",
     "git",
     "diff"
   ],
-  "homepage": "https://github.com/scottgonzalez/pretty-diff",
-  "bugs": "https://github.com/scottgonzalez/pretty-diff/issues",
   "author": {
-    "name": "Scott González",
-    "email": "scott.gonzalez@gmail.com",
-    "url": "http://scottgonzalez.com"
+    "name": "Appalachia Interactive"
   },
+  "icon": "media/icon.png",
+  "publishConfig": {
+    "registry": "http://localhost:4873/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/AppalachiaInteractive/com.appalachia.node.html-diff.git"
+  },
+  "homepage": "https://github.com/AppalachiaInteractive/com.appalachia.node.html-diff",
+  "bugs": "https://github.com/AppalachiaInteractive/com.appalachia.node.html-diff/issues",
   "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/AppalachiaInteractive/com.appalachia.node.html-diff/blob/master/LICENSE.md"
+    },
     {
       "type": "MIT",
       "url": "https://github.com/scottgonzalez/pretty-diff/blob/master/LICENSE.txt"
     }
   ],
+  "scripts": {
+    "preversion": "bash ~/com.appalachia/ai/ai.sh package preversion",
+    "version": "bash ~/com.appalachia/ai/ai.sh package version",
+    "postversion": "bash ~/com.appalachia/ai/ai.sh package postversion",
+    "prepack": "bash ~/com.appalachia/ai/ai.sh package prepack",
+    "postpack": "bash ~/com.appalachia/ai/ai.sh package postpack",
+    "prepublishOnly": "bash ~/com.appalachia/ai/ai.sh package prepublishOnly",
+    "publish": "bash ~/com.appalachia/ai/ai.sh package publish",
+    "postpublish": "bash ~/com.appalachia/ai/ai.sh package postpublish",
+    "test": "mocha"
+  },
   "bin": {
     "git-gist-diff": "./gist-diff.js",
-    "git-pretty-diff": "./pretty-diff.js",
+    "git-html-diff": "./html-diff.js",
     "gist-diff": "./gist-diff.js",
-    "pretty-diff": "./pretty-diff.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/scottgonzalez/pretty-diff.git"
+    "html-diff": "./html-diff.js"
   },
   "dependencies": {
+    "chai": "^4.3.4",
     "github-request": "1.2.4",
-    "open": "6.4.0"
+    "mocha": "^8.3.2",
+    "mocha-sinon": "^2.1.2",
+    "open": "6.4.0",
+    "sinon": "^10.0.0"
   }
 }

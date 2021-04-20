@@ -1,9 +1,6 @@
 #!/usr/bin/env node
 
 var fs = require( "fs" );
-var path = require( "path" );
-var os = require( "os" );
-var open = require( "open" );
 var diff = require( "./diff" );
 
 diff( process.argv.slice( 2 ).join( " " ), function( error, parsedDiff ) {
@@ -24,13 +21,12 @@ diff( process.argv.slice( 2 ).join( " " ), function( error, parsedDiff ) {
 		return;
 	}
 
-	generatePrettyDiff( parsedDiff );
+	generateHtmlDiff( parsedDiff );
 });
 
-function generatePrettyDiff( parsedDiff ) {
+function generateHtmlDiff( parsedDiff ) {
 	var template = fs.readFileSync( __dirname + "/template.html", "utf8" );
 	var diffHtml = "";
-	var tempPath = path.join( os.tmpdir(), "diff.html" );
 
 	for ( var file in parsedDiff ) {
 		diffHtml +=
@@ -45,8 +41,9 @@ function generatePrettyDiff( parsedDiff ) {
 			"</div></div>";
 	}
 
-	fs.writeFileSync( tempPath, template.replace( "{{diff}}", diffHtml ) );
-	open( tempPath );
+	
+	var output = template.replace( "{{diff}}", diffHtml );
+	console.log(output)
 }
 
 var markUpDiff = function() {
